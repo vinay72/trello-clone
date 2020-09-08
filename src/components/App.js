@@ -1,6 +1,7 @@
 import React from "react";
 import TrelloList from "./TrelloList";
 import { connect } from "react-redux";
+import TrelloActionButton from "./TrelloActionButton";
 
 class App extends React.Component {
   render() {
@@ -11,8 +12,9 @@ class App extends React.Component {
         <h2>Hello VINAY!</h2>
         <div style={styles.listsContainer}>
           {lists.map((list) => (
-            <TrelloList title={list.title} cards={list.cards} />
+            <TrelloList key={list.id} title={list.title} cards={list.cards} />
           ))}
+          <TrelloActionButton list />
         </div>
       </div>
     );

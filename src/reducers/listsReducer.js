@@ -15,7 +15,7 @@ const initialState = [
   },
   {
     title: "Mobile-React Native",
-    id: 0,
+    id: 1,
     cards: [
       {
         id: 0,
@@ -33,7 +33,7 @@ const initialState = [
   },
   {
     title: "Opmagic",
-    id: 0,
+    id: 2,
     cards: [
       {
         id: 0,
